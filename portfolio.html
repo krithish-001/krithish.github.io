@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio website of Krithish R, UI/UX Designer and Developer. Showcasing projects, skills, and contact information.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #111;
+        }
+
+      /* FIXED CENTERED NAVBAR */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 18px 32px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    max-width: 720px;
+    width: calc(100% - 50px);
+}
+
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #111;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: .2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #000;
+            color: white;
+        }
+
+        /* Section layout */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 40px;
+        }
+
+        .text-box {
+            max-width: 600px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            font-size: 12px;
+            border-radius: 20px;
+            background: #eee;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 5px 0;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 10px 0 18px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .info {
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid #000;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn.black {
+            background: #000;
+            color: white;
+        }
+
+        .btn.white {
+            background: white;
+            color: #000;
+        }
+
+        /* Right-side Image */
+        .hero img {
+            width: 350px;
+            border-radius: 5px;
+            user-select: none;
+        }
+
+        @media(max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                margin-top: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav role="navigation" aria-label="Primary Navigation">
+    <a class="active" href="#home" aria-current="page">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+<section id="home" class="hero" role="region" aria-label="Home Section">
+    <div class="text-box"> 
+        <span class="badge">.Available for freelance work</span>
+
+<h1 id="typewriter-heading" aria-label="Hi, I'm Krithish R">Hi, I'm Krithish R</h1>
+        <h2 id="typing-text"></h2>
+
+        <p>
+            a DevOps and Frontend developer focused on building scalable deployments and intuitive interfaces. I’m constantly learning, improving, and turning ideas into working solutions that make a real impact.
+        </p>
+
+        <div class="info" aria-live="polite">
+            📍 Based in bangalore &nbsp;&nbsp; | &nbsp;&nbsp; 🟢 Available Now
+        </div>
+        <div class="buttons">
+    <a href="#contact" id="hireMeBtn" class="btn black">Hire Me</a>
+    <a href="/files/krithishcv.pdf" download id="downloadCvBtn" class="btn white" aria-label="Download my CV">Download CV</a>
+</div>
+
+<hr class="follow-line">
+
+<div class="follow-container">
+    <span>Follow me:</span>
+    <div class="follow-icons">
+        <a href="https://github.com/krithish-001" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <a href="http://linkedin.com/in/krithish-r-ab72b0241" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+    </div>
+         <!-- Replace with your image -->
+    <img src="/images/website photo main.jpg" alt="Illustration of developer at work">
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about" role="region" aria-labelledby="aboutHeading">
+    <div class="about-left">
+        <h4 id="aboutHeading">ABOUT ME</h4>
+        <h1>Building Meaningful<br>Digital Experiences</h1>
+
+        <hr class="section-line">
+
+        <p>
+            I'm a DevOps and Frontend developer passionate about building reliable systems and clean user interfaces.
+            My journey started with curiosity for how things work and evolved into solving real-world problems using
+            automation, cloud, and modern web technologies — combining logic and creativity to bring ideas to life.
+        </p>
+
+        <p>
+            When I’m not coding, I love learning new tools, improving my skills, and exploring better ways to deliver
+            scalable applications. I believe in continuous learning, attention to detail, and the power of clean,
+            elegant design.
+        </p>
+
+        <h3>What Drives Me</h3>
+
+        <div class="cards">
+            <div class="card">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <h4>Languages</h4>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+    <h2 class="projects-title">Projects</h2>
+    <p class="projects-subtext">
+        A selection of my work in DevOps, automation, data analysis, and real-world problem solving.
+    </p>
+
+    <div class="project-grid">
+
+        <!-- Project 1: DevOps / Kubernetes -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="/images/docker project.png" alt="DevOps Kubernetes Project">
+            </div>
+
+            <h3>Automated Deployment of a Containerized Web App</h3>
+            <p>
+                Containerized a Node.js application with Docker and deployed it on a Kubernetes cluster using
+                Deployments, Services, and Ingress. Integrated GitHub Actions to build and push images and enabled
+                rolling updates for zero-downtime deployments.
+            </p>
+
+            <div class="tech-stack">
+                <span>Docker</span>
+                <span>GitHub Actions</span>
+                <span>Kubernetes</span>
+                <span>Node.js</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#" class="btn git-btn">GitHub</a>
+                <a href="#" class="btn demo-btn">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- Project 2: IoT Road Safety -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="/images/conflict project.png" alt="IoT Road Safety System">
+            </div>
+
+            <h3>Conflict Avoidance & Road Safety System</h3>
+            <p>
+                Built an IoT-based road safety system using Python-driven microcontrollers and sensors to detect
+                risky road curves and reduce accident chances with early warnings and landscape updates.
+            </p>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>IoT Sensors</span>
+                <span>Embedded Systems</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#" class="btn git-btn">GitHub</a>
+                <a href="#" class="btn demo-btn">Project Report</a>
+            </div>
+        </div>
+
+        <!-- Project 3: IMDB Movie Analysis -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="/images/imdb project.png" alt="IMDB Movie Analysis">
+            </div>
+
+            <h3>Top 250 IMDB Movies – Data Analysis</h3>
+            <p>
+                Developed a JavaFX desktop application with MySQL backend to analyze and visualize IMDB Top 250
+                movies, exploring patterns in ratings, genres, and trends using interactive charts.
+            </p>
+
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>MySQL</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#" class="btn git-btn">GitHub</a>
+                <a href="#" class="btn demo-btn">Screenshots</a>
+            </div>
+        </div>
+
+        <!-- Project 4: Personal Portfolio Website -->
+<div class="project-card">
+    <div class="project-image">
+        <img src="/images/porfolio photo.jpg" alt="Portfolio Website Preview">
+    </div>
+
+    <h3>Personal Portfolio Website</h3>
+    <p>
+        A responsive personal portfolio designed and built using HTML, CSS, and JavaScript.
+        Includes smooth navigation, scroll animations, and a dynamic typing effect for improved user experience.
+    </p>
+
+    <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+
+    <div class="project-links">
+        <a href="#" class="btn git-btn">GitHub</a>
+        <a href="#" class="btn demo-btn">Live Demo</a>
+    </div>
+</div>
+
+     </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+    <h4>CONTACT</h4>
+    <h2>Get in Touch with Me</h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE INFO -->
+        <div class="contact-info">
+            <p>
+                I’m always open to collaborate, discuss projects, and explore new opportunities.
+                Let’s build something meaningful!
+            </p>
+
+            <div class="contact-details">
+                <p><i class="fa-solid fa-envelope"></i> krithikvasan145@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9113039145</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bangalore, India</p>
+            </div>
+
+            <div class="contact-socials">
+                <a href="https://github.com/yourgithub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/yourinstagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+<form class="contact-form" action="#" aria-label="Contact form" novalidate>
+    <label for="nameInput" class="sr-only">Your Name</label>
+    <input type="text" id="nameInput" placeholder="Your Name" required>
+    <div class="validation-message" id="nameError" aria-live="polite"></div>
+
+    <label for="emailInput" class="sr-only">Your Email</label>
+    <input type="email" id="emailInput" placeholder="Your Email" required>
+    <div class="validation-message" id="emailError" aria-live="polite"></div>
+
+    <label for="messageInput" class="sr-only">Your Message</label>
+    <textarea id="messageInput" placeholder="Your Message" rows="6" required></textarea>
+    <div class="validation-message" id="messageError" aria-live="polite"></div>
+
+    <button type="submit" class="send-btn">Send Message</button>
+    <div class="form-success-message" id="formSuccess" aria-live="polite"></div>
+</form>
+    </div>
+</section>
