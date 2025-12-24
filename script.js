@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingText = document.getElementById("typing-text");
 
   const roles = [
-    "UI/UX Developer",
+    "Full Stack Developer",
+    "MERN",
     "Frontend Developer",
     "DevOps Engineer"
   ];
