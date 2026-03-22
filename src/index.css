@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-lg border border-white/5 shadow-2xl;
+  }
+}
+
+/* Light Mode Overrides */
+.light .theme-container {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+.light .glass {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-color: rgba(0, 0, 0, 0.05) !important;
+  color: #1e293b !important;
+}
+.light .glass-dark {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  color: #0f172a !important;
+}
+.light .text-slate-400 { color: #475569 !important; }
+.light .text-slate-300 { color: #334155 !important; }
+.light .text-white { color: #020617 !important; }
+.light section.bg-slate-950, .light section.bg-slate-900 {
+  background-color: transparent !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  background-color: #020617; /* Slate 950 */
+  color: #f8fafc; /* Slate 50 */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
